@@ -1,0 +1,40 @@
+
+body,html{
+	margin: 0;
+	padding: 0;
+}
+
+.wraps{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-auto-rows: minmax(100px, auto);
+	grid-column-gap:1em; 
+
+}
+
+.wraps > div {
+	background-color:#eee;
+	padding: 1em;
+
+	 
+
+}
+
+.wraps > div:nth-child(odd){
+	background-color:#ddd;
+}
+
+.nested {
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+	grid-gap:1em;
+	grid-auto-rows:minmax(40px, auto);
+
+}
+
+.nested > div{
+		border: 5px solid green;
+		padding: 1em;
+			text-align: center;
+			text-transform: capitalize;
+}
